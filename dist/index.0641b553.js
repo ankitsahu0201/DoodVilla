@@ -32365,7 +32365,7 @@ const Body = ()=>{
     const BodySearchBar = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
         type: "text",
         placeholder: "Search",
-        className: "body-serachBar",
+        className: "body-searchBar",
         value: searchValue,
         onChange: (e)=>{
             setSearchValue(e.target.value);
@@ -32379,7 +32379,7 @@ const Body = ()=>{
     //React Element for address
     const Address = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
         type: "text",
-        className: "body-serachBar",
+        className: "body-searchBar",
         value: address,
         readOnly: true
     }, void 0, false, {
@@ -32390,8 +32390,17 @@ const Body = ()=>{
     if (dynamicData.length === 0) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body-container",
         children: [
-            BodySearchBar,
-            Address,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "input-flex",
+                children: [
+                    BodySearchBar,
+                    Address
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 102,
+                columnNumber: 9
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "mainContent",
                 children: [
@@ -32409,12 +32418,12 @@ const Body = ()=>{
                     12
                 ].map((_, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _skeletonDefault.default), {}, "skeletonBlock" + index, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 106,
+                        lineNumber: 108,
                         columnNumber: 13
                     }, undefined))
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 104,
+                lineNumber: 106,
                 columnNumber: 9
             }, undefined)
         ]
@@ -32426,8 +32435,17 @@ const Body = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "body-container",
         children: [
-            BodySearchBar,
-            Address,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "input-flex",
+                children: [
+                    BodySearchBar,
+                    Address
+                ]
+            }, void 0, true, {
+                fileName: "src/components/Body.js",
+                lineNumber: 116,
+                columnNumber: 7
+            }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "mainContent",
                 children: filteredData.map((restaurant)=>{
@@ -32435,19 +32453,19 @@ const Body = ()=>{
                         restaurantData: restaurant.data
                     }, restaurant.data.uuid, false, {
                         fileName: "src/components/Body.js",
-                        lineNumber: 119,
+                        lineNumber: 123,
                         columnNumber: 13
                     }, undefined);
                 })
             }, void 0, false, {
                 fileName: "src/components/Body.js",
-                lineNumber: 116,
+                lineNumber: 120,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Body.js",
-        lineNumber: 113,
+        lineNumber: 115,
         columnNumber: 5
     }, undefined);
 };

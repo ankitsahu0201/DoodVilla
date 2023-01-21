@@ -46,9 +46,14 @@ body {
   margin: 1rem;
 }
 
-.body-serachBar {
+.input-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.body-searchBar {
   width: 30%;
-  display: block;
 }
 
 .mainContent {

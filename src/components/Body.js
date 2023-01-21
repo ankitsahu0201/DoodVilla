@@ -71,7 +71,7 @@ const Body = () => {
     <input
       type="text"
       placeholder="Search"
-      className="body-serachBar"
+      className="body-searchBar"
       value={searchValue}
       onChange={(e) => {
         setSearchValue(e.target.value);
@@ -90,7 +90,7 @@ const Body = () => {
   const Address = (
     <input
       type="text"
-      className="body-serachBar"
+      className="body-searchBar"
       value={address}
       readOnly
     ></input>
@@ -99,8 +99,10 @@ const Body = () => {
   if (dynamicData.length === 0)
     return (
       <div className="body-container">
-        {BodySearchBar}
-        {Address}
+        <div className="input-flex">
+          {BodySearchBar}
+          {Address}
+        </div>
         <div className="mainContent">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((_, index) => (
             <Skeleton key={"skeletonBlock" + index} />
@@ -111,8 +113,10 @@ const Body = () => {
 
   return (
     <div className="body-container">
-      {BodySearchBar}
-      {Address}
+      <div className="input-flex">
+        {BodySearchBar}
+        {Address}
+      </div>
       <div className="mainContent">
         {filteredData.map((restaurant) => {
           return (
