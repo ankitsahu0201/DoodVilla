@@ -1,0 +1,22 @@
+{
+  "name": "react-namaste-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx parcel index.html",
+    "build": "build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.2"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  }
+}

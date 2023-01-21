@@ -1,0 +1,169 @@
+:root {
+  --mainLayoutBGColor: rgb(91, 5, 171);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  border: 1 solid black;
+  background-color: var(--mainLayoutBGColor);
+  color: white;
+}
+
+.logo {
+  width: 5rem;
+}
+
+.logo > a > img {
+  width: 100%;
+}
+
+.nav-lists {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-lists li {
+  padding: 1rem;
+}
+
+.body-container {
+  margin: 1rem;
+}
+
+.body-serachBar {
+  width: 30%;
+  display: block;
+}
+
+.mainContent {
+  padding: 1rem;
+  display: inline-grid;
+  grid-template-columns: repeat(4, 18%);
+  grid-gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  border: 1 solid rebeccapurple;
+  padding: 0.3rem;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 2px 2px gray;
+}
+
+.card:hover {
+  border: 2 solid red;
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.card img {
+  height: 10rem;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card h3 {
+  font-size: 1rem;
+}
+
+.card h4 {
+  font-size: 0.8rem;
+  flex-grow: 8;
+}
+
+.card h5 {
+  justify-self: end;
+}
+
+.card-restaurant-image {
+  width: 100%;
+}
+
+.skeletonContent-1 {
+  background-color: rgb(218, 217, 217);
+  height: 5rem;
+}
+
+.skeletonContent-2 {
+  background-color: rgb(218, 217, 217);
+  margin: 0.5rem 0;
+  height: 2rem;
+}
+
+.skeletonContent-3 {
+  background-color: rgb(218, 217, 217);
+  margin: 0.5rem 0;
+  height: 1.5rem;
+}
+
+@media (max-width: 60rem) {
+  .mainContent {
+    padding: 1rem;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 30%);
+    grid-gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 40rem) {
+  .mainContent {
+    padding: 1rem;
+    display: inline-grid;
+    grid-template-columns: repeat(1, 60%);
+    grid-gap: 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+.animate {
+  animation: shimmer 5s infinite;
+  background: linear-gradient(to right, #eff1f3 4%, #e2e2e2 25%, #eff1f3 36%);
+  background-size: 1000px 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.nav-lists a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-lists a[class="active"] {
+  color: Yellow;
+  text-decoration: underline;
+}
